@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>📘 Balaji Institute</h2>
+    <ul>
+      <li>🏠 Home</li>
+      <li>📚 Courses</li>
+      <li>🎓 Batches</li>
+      <li>📞 Contact Us</li>
+      <li>ℹ️ About</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <div class="top-bar">
+        <select>
+          <option>Tally</option>
+          <option>Advanced Excel</option>
+          <option>CPCT</option>
+          <option>Basic Computer</option>
+          <option>PGDCA</option>
+          <option>DCA</option>
+          <option>B. Computer</option>
+        </select>
+        <input type="text" placeholder="Search for courses..." />
+        <div class="profile">Hi, Student 👤</div>
+      </div>
+      <div class="banner">
+        <h1>Tally + Excel Master Program</h1>
+        <p>Learn Accounting + Advanced Excel with Certification</p>
+        <button>Enroll Now</button>
+      </div>
+    </header>
+
+    <section class="courses">
+      <h2 class="section-title">🔥 Our Popular Courses</h2>
+      <div class="course-grid">
+        <!-- Course Card 1 -->
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/tally.png" alt="Tally">
+          <h3>Tally Prime</h3>
+          <p class="short">From basics to GST-enabled accounting</p>
+          <div class="details">
+            <p>Learn manual to computerized accounting. GST, TDS, Balance Sheet, and reports.</p>
+            <span>Starts: May 2025</span>
+          </div>
+        </div>
+
+        <!-- Course Card 2 -->
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/microsoft-excel-2019--v1.png" alt="Excel">
+          <h3>Advanced Excel</h3>
+          <p class="short">Formulas, Dashboards & Reporting</p>
+          <div class="details">
+            <p>Master Excel for office work – VLOOKUP, Pivot Table, Chart, Dashboard Making.</p>
+            <span>Starts: June 2025</span>
+          </div>
+        </div>
+
+        <!-- Course Card 3 -->
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/keyboard.png" alt="CPCT">
+          <h3>CPCT</h3>
+          <p class="short">Typing, MS Office, Internet, Aptitude</p>
+          <div class="details">
+            <p>Typing in Hindi/English, Aptitude, Computer Awareness – CPCT exam preparation.</p>
+            <span>New Batch Every Month</span>
+          </div>
+        </div>
+
+        <!-- More Courses -->
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/computer-support.png" alt="Basic">
+          <h3>Basic Computer</h3>
+          <p class="short">Computer Fundamentals for Beginners</p>
+          <div class="details">
+            <p>Learn MS Word, Excel, Paint, Internet, and Computer Basics from scratch.</p>
+            <span>Every Week New Batch</span>
+          </div>
+        </div>
+
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/graduation-cap.png" alt="PGDCA">
+          <h3>PGDCA</h3>
+          <p class="short">Post Graduate Diploma in Computer</p>
+          <div class="details">
+            <p>Full 1-year program with projects, practicals & theory – university certified.</p>
+            <span>Session Starts: July 2025</span>
+          </div>
+        </div>
+
+        <div class="course-card" onclick="toggleDetails(this)">
+          <img src="https://img.icons8.com/color/96/000000/student-center.png" alt="DCA">
+          <h3>DCA</h3>
+          <p class="short">Diploma in Computer Applications</p>
+          <div class="details">
+            <p>Learn software tools, OS, networking, and office automation.</p>
+            <span>Every 2 Months New Batch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>📍 1st Floor, Hotel Pankaj, Birla Road, Satna (M.P) | 📞 9981695272</p>
+      <p>✨ Design by Satyam</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleDetails(card) {
+      card.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
